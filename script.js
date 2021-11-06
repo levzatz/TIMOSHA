@@ -20,12 +20,25 @@ const btn = document.querySelectorAll("button");
 btn.forEach(item=>{
     item.addEventListener('mouseenter',(e)=>{
       /*   e.target.style.backgroundColor=`rgb(${getRandomIntInclusive(0, 255)},${getRandomIntInclusive(0, 255)},${getRandomIntInclusive(0, 255)})`; */
+        /* let aud = new Audio();
+        aud.src=`${getRandomIntInclusive(1, 5)}.mp3`;
+        aud.play(); */
+        e.target.style.backgroundImage=`url("${getRandomIntInclusive(1, 24)}.jpg")`;
+        
+        
+        
+    });
+        
+});
+btn.forEach(item=>{
+    item.addEventListener('mouseenter',(e)=>{
+      /*   e.target.style.backgroundColor=`rgb(${getRandomIntInclusive(0, 255)},${getRandomIntInclusive(0, 255)},${getRandomIntInclusive(0, 255)})`; */
         let aud = new Audio();
         aud.src=`${getRandomIntInclusive(1, 5)}.mp3`;
-        e.target.style.backgroundImage=`url("${getRandomIntInclusive(1, 4)}.jpg")`;
-        
-        
         aud.play();
+        
+        
+        
     });
         
 });
